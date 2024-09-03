@@ -32,7 +32,7 @@ def benchmark(
     provider: test_utils.Provider,
     mode: str = "forward",
     rotary_percent: float = 1.0,
-    tensor_format: str ="sbhd",
+    tensor_format: str = "sbhd",
     device: torch.device = torch.device("cuda"),
 ):
     t = torch.rand(
