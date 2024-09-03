@@ -31,7 +31,7 @@ PYTHONPATH={PATH_TO_REPOSITORY_ROOT} python triton_utils/layer_test.py
 
 ## Benchmark
 
-You can run *benchmark.py* to compare how much time comsumption between triton vs torch vs cuda.
+You can run *benchmark.py* to compare time comsumption between triton vs torch vs cuda.
 
 ```bash
 python benchmark.py
