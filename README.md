@@ -4,6 +4,19 @@ This is repository contains python code for Rotary Position Embedding(RoPE) impl
 
 Regarding RoPE, you can refer to this [paper](https://arxiv.org/pdf/2104.09864).
 
+## Environment
+
+For reproduce, you can build your image using Dockerfile:
+```bash
+docker build --tag {TAG} . 
+```
+
+Once it's built, run container as following:
+```bash
+docker run -it {IMAGE}:{TAG} bash
+```
+You are all set!
+
 ## Testing
 
 You can test triton version of RoPE with following command:
