@@ -31,7 +31,7 @@ PYTHONPATH={PATH_TO_REPOSITORY_ROOT} python triton_utils/layer_test.py
 
 ## Benchmark
 
-You can run *benchmark.py* to compare embedding speed between triton vs torch vs cuda.
+You can run *benchmark.py* to compare time comparison between triton vs torch vs cuda.
 
 ```bash
 python benchmark.py
@@ -41,6 +41,7 @@ Once it's done, results will be dumped to "./results"
 Current comparison result is follows:
 
 ```bash
+# lower is better
 RoPE performance:
    dimension_size     Triton      Torch       Cuda
             16.0   0.203776   0.089088   0.076800
@@ -54,3 +55,4 @@ RoPE performance:
           4096.0  16.146927  39.028225  15.905792
           8192.0  32.131073  75.272324  31.818785
 ```
+RoPE(triton) obviously outperforms torch version of RoPE, but slightly slower than that of cuda fused version.
