@@ -1,9 +1,10 @@
 # Re-implementation of Rotary Position Embedding in Triton
 
 This is repository contains python code for Rotary Position Embedding(RoPE) implemented in Triton.
-Regarding RoPE, you can refer to this paper.[arxiv](https://arxiv.org/pdf/2104.09864)
 
-## Testing results with pytorch
+Regarding RoPE, you can refer to this [paper](https://arxiv.org/pdf/2104.09864).
+
+## Testing
 
 You can test triton version of RoPE with following command:
 
@@ -12,7 +13,7 @@ PYTHONPATH={PATH_TO_REPOSITORY_ROOT} python triton_utils/layer_test.py
 ```
 
 
-## Benchmarking Triton
+## Benchmark
 
 You can run *benchmark.py* to compare embedding speed between triton vs torch vs cuda.
 
