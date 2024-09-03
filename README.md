@@ -57,3 +57,5 @@ RoPE performance:
           8192.0  32.131073  75.272324  31.818785
 ```
 RoPE(triton) obviously outperforms torch version of RoPE, but slightly slower than that of cuda fused version.
+
+![Rope Performance](./data/RoPE%20performance.png)
