@@ -2,6 +2,9 @@
 
 This is repository contains python code for Rotary Position Embedding(RoPE) implemented in Triton.
 
+Each forward, backward kernel is defined in triton_utils/kernel.py,
+and wrapped as a layer in triton_utils/layer.py using torch.autograd.Function.
+
 Regarding RoPE, you can refer to this [paper](https://arxiv.org/pdf/2104.09864).
 
 ## Environment
