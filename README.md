@@ -1,6 +1,6 @@
 # Implementation of Rotary Position Embedding in Triton
 
-This is repository contains python code for Rotary Position Embedding(RoPE) implemented in Triton.
+This repository contains python code for Rotary Position Embedding(RoPE) implemented in Triton.
 
 Each forward, backward kernel is defined in triton_utils/kernel.py,
 and wrapped as a layer in triton_utils/layer.py using torch.autograd.Function.
@@ -31,14 +31,15 @@ PYTHONPATH={PATH_TO_REPOSITORY_ROOT} python triton_utils/layer_test.py
 
 ## Benchmark
 
-You can run *benchmark.py* to compare time comparison between triton vs torch vs cuda.
+You can run *benchmark.py* to compare how much time comsumption between triton vs torch vs cuda.
 
 ```bash
 python benchmark.py
 ```
 
 Once it's done, results will be dumped to "./results"
-Current comparison result is follows:
+
+Current comparison result is as follows:
 
 ```bash
 # lower is better
