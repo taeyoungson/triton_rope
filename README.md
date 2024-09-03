@@ -1,4 +1,4 @@
-# Re-implementation of Rotary Position Embedding in Triton
+# Implementation of Rotary Position Embedding in Triton
 
 This is repository contains python code for Rotary Position Embedding(RoPE) implemented in Triton.
 
