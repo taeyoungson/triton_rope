@@ -11,7 +11,7 @@ Regarding RoPE, you can refer to this [paper](https://arxiv.org/pdf/2104.09864).
 
 For reproduce, you can build your image using Dockerfile:
 ```bash
-docker build --tag {TAG} . 
+docker build --tag {IMAGE}:{TAG} . 
 ```
 
 Once it's built, run container as following:
