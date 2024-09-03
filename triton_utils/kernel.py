@@ -2,8 +2,6 @@ import torch
 import triton
 import triton.language as tl
 import transformer_engine
-from loguru import logger
-from typing import Union
 
 @triton.jit
 def rope_forward(
